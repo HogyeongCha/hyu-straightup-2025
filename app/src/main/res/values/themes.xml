@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    기본 앱 테마 (Day Mode)
+    -->
+    <style name="Theme.StraightUp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/colorAppBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <!--
+        [수정됨]
+        전반적인 폰트 크기를 키우기 위해
+        Material Design의 기본 텍스트 스타일을 오버라이드합니다.
+
+        - textAppearanceBody1 (기본 16sp) -> 18sp로
+        - textAppearanceBody2 (기본 14sp) -> 16sp로
+        - textAppearanceCaption (기본 12sp) -> 14sp로
+        -->
+        <item name="textAppearanceHeadline6">@style/MyTextAppearance.Headline6</item>
+        <item name="textAppearanceBody1">@style/MyTextAppearance.BodyLarge</item>
+        <item name="textAppearanceBody2">@style/MyTextAppearance.BodyMedium</item>
+        <item name="textAppearanceCaption">@style/MyTextAppearance.BodySmall</item>
+
+        <!--
+        일반 텍스트뷰(textAppearance이 지정되지 않은)의 기본 크기도
+        Body2(16sp)를 따르도록 설정합니다.
+        -->
+        <item name="android:textAppearance">@style/MyTextAppearance.BodyMedium</item>
+
+    </style>
+
+    <!--
+    [수정됨]
+    기본 텍스트 스타일을 상속받아 폰트 크기만 수정한 커스텀 스타일
+    부모(parent) 스타일의 이름을 올바르게 변경합니다.
+    -->
+
+    <!-- 카드 제목 등 (기본 20sp) -->
+    <style name="MyTextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 설정 항목 제목 등 (Body1 -> 18sp로 키움) -->
+    <style name="MyTextAppearance.BodyLarge" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 본문 텍스트 (Body2 -> 16sp로 키움) -->
+    <style name="MyTextAppearance.BodyMedium" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 보조 텍스트 (Caption -> 14sp로 키움) -->
+    <style name="MyTextAppearance.BodySmall" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

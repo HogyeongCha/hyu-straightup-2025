@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Primary Color Palette (Blue - based on HTML Mockup)
+    - colorPrimary: 메인 브랜드 색상 (툴바, 주요 버튼 등)
+    - colorPrimaryVariant: colorPrimary보다 약간 어두운 색상 (상태 표시줄 등)
+    - colorOnPrimary: Primary 색상 위에 표시되는 텍스트/아이콘 색상 (주로 흰색)
+    -->
+    <color name="blue_500">#3B82F6</color>
+    <color name="blue_600">#2563EB</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--
+    Secondary Color Palette (Emerald/Green - for accents)
+    - colorSecondary: 보조 색상 (FAB, 스위치, 활성 탭 등)
+    - colorSecondaryVariant: colorSecondary보다 약간 어두운 색상
+    - colorOnSecondary: Secondary 색상 위에 표시되는 텍스트/아이콘 색상 (주로 흰색)
+    -->
+    <color name="emerald_500">#10B981</color>
+    <color name="emerald_600">#059669</color>
+
+    <!--
+    Surface, Background, Error Colors
+    - colorSurface: 카드, 시트, 메뉴 등의 표면 색상 (주로 흰색)
+    - colorOnSurface: Surface 색상 위에 표시되는 텍스트/아이콘 색상 (어두운 회색)
+    - colorAppBackground: 앱의 전체 배경색
+    - colorStatusRed: '위험' 상태를 나타내는 색상
+    -->
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="red_500">#EF4444</color>
+
+    <!-- Theme Colors -->
+    <color name="colorPrimary">@color/blue_500</color>
+    <color name="colorPrimaryVariant">@color/blue_600</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorSecondary">@color/emerald_500</color>
+    <color name="colorSecondaryVariant">@color/emerald_600</color>
+    <color name="colorOnSecondary">@color/white</color>
+    <color name="colorSurface">@color/white</color>
+    <color name="colorOnSurface">@color/gray_800</color>
+    <color name="colorAppBackground">@color/gray_100</color>
+    <color name="colorStatusRed">@color/red_500</color>
+    <color name="colorStatusOrange">#FF5722</color>
+    <color name="colorStatusGreen">#4CAF50</color>
+</resources>
